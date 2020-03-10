@@ -38,15 +38,15 @@
 	</style>
 </head>
 <body>
-	<form name="myForm" action="CreditCardValidation" method="get" >
+	<form name="myForm" action="checkEligibility" method="get" >
 		<div class="a">
 			<h1>Check For Credit Card Eligibility</h1>
 			<table style="width:65%">
 				<tr>
-					<td><h2>Enter PAN Number:<input type="text" name="PAN_No" id="pan_No"  required aria-required="true"  pattern="[A-Za-z-0-9]{10}" title="10 character alpha numeric"/></h2></td>
+					<td><h2>Enter PAN Number:<input type="text" name="panNo" id="panNo"  required aria-required="true"  pattern="[A-Za-z-0-9]{10}" title="10 character alpha numeric"/></h2></td>
 				</tr>
 				<tr>
-					<td><input type="submit" class="button" value="Check"></td>
+					<td><input id="submit" type="submit" class="button" value="Check"></td>
 				</tr>
 			</table>
 		</div>

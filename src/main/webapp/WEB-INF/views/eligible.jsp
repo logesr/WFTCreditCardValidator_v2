@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Eligible Card</title>
 	<style>
-		#validyPass{
+		#msg{
 		  background-color:#FFA500;
 		  height:200px;
 		  align:center;
@@ -18,7 +18,7 @@
 </head>
 <body>
 
-		<div id="validyPass">
+		<div id="msg">
 				<center>
 				<h1>Congratulations!!!You are eligible for a Credit Card</h1>
 				</center>

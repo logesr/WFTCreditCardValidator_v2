@@ -19,25 +19,24 @@ import javax.servlet.http.HttpServletRequest;
 public class CreditCardController {
 	
 	@Autowired
-    private CreditCardService CreditCardService;
+    private CreditCardService creditCardService;
 	
 
 	@RequestMapping(value = "/")
 	public ModelAndView getHome(HttpServletRequest request) throws IOException {
-		ModelAndView model = new ModelAndView("index");
-		return model;
+		return  new ModelAndView("index");
 	}
 
 
 
-	@RequestMapping(value = "/CreditCardValidation", method = RequestMethod.GET)
+	@RequestMapping(value = "/checkEligibility", method = RequestMethod.GET)
 	public ModelAndView checkCreditScore(HttpServletRequest request) {
-		String pannumber = request.getParameter("PAN_No");
+		String pannumber = request.getParameter("panNo");
 		String validity = "";
 		try {
-			if (CreditCardService.validateCreditScore(pannumber) == null) {
+			if (creditCardService.validateCreditScore(pannumber) == null) {
 				validity = "invalid";
-			} else if (CreditCardService.validateCreditScore(pannumber).get(0).getCreditscore() > 5) {
+			} else if (creditCardService.validateCreditScore(pannumber).get(0).getCreditscore() > 5) {
 				validity = "eligible";
 			} else {
 				validity = "ineligible";
@@ -45,10 +44,9 @@ public class CreditCardController {
 		}catch(Exception e){
 			validity = "invalid";
 		}
-		ModelAndView model = new ModelAndView(validity);
 
 
-		return model;
+		return new ModelAndView(validity);
 	}
 	
 

@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
 public class CreditCardService {
 	
 	@Autowired
-    private com.wft.creditcardvalidator.dao.CreditCardDAO CreditCardDAO;
+    private com.wft.creditcardvalidator.dao.CreditCardDAO creditCardDAO;
 
 	public List<CreditCard> validateCreditScore(String pannumber) {
-		return CreditCardDAO.validateCreditScore(pannumber);
+		return creditCardDAO.validateCreditScore(pannumber);
 	}
 
 }

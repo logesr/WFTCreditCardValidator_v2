@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Validation_Checking</title>
 	<style>
-		#panIdCheck{
+		#msg{
 		  background-color: #ff7c4d;
 		  height:200px;
 		  align:center;
@@ -19,7 +19,7 @@
 <body>
 
 
-		<div id="panIdCheck">
+		<div id="msg">
 			<center>
 			<h1>Invalid Pan Entry!!!</h1>
 			<a href="/WFTCreditCardValidator">Enter Again</a>

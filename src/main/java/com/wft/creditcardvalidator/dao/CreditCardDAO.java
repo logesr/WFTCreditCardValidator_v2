@@ -18,7 +18,6 @@ public class CreditCardDAO {
 		TypedQuery<CreditCard> query = em.createQuery(
 				"SELECT c FROM CreditCard c WHERE LOWER(c.pannumber) = LOWER(:pannumber)", CreditCard.class);
 		query.setParameter("pannumber",pannumber);
-		//System.out.println("Test"+query.getSingleResult());
 		return query.getResultList();
 	}
 

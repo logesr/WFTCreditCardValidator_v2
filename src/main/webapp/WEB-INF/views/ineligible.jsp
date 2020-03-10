@@ -7,7 +7,7 @@
 	<title>Validation_Checking</title>
 	<style>
 
-		#validyFail{
+		#msg{
 		  background-color:#73e600;
 		  height:200px;
 		  align:center;
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-			<div id="validyFail">
+			<div id="msg">
 				<center>
 				<h1>Sorry!!!You are not eligible for a Credit Card</h1>
 				</center>
