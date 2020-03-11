@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Validation_Checking</title>
+	<title>CreditCard-Invalid</title>
 	<style>
 		#msg{
 		  background-color: #ff7c4d;
@@ -21,9 +22,9 @@
 
 		<div id="msg">
 			<center>
-			<h1>Invalid Pan Entry!!!</h1>
-			<a href="/WFTCreditCardValidator">Enter Again</a>
+			<h1>Invalid PAN Entry !!!</h1>
 			</center>
 		</div>
+		<a href="<c:url value="/"/>">Enter Again</a>
 </body>
 </html>

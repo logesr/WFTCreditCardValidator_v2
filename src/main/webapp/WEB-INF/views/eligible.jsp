@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Eligible Card</title>
+	<title>CreditCard-Eligible</title>
 	<style>
 		#msg{
 		  background-color:#FFA500;
@@ -20,7 +20,7 @@
 
 		<div id="msg">
 				<center>
-				<h1>Congratulations!!!You are eligible for a Credit Card</h1>
+				<h1>Congratulations!!! You are eligible for a credit card</h1>
 				</center>
 			</div>
 

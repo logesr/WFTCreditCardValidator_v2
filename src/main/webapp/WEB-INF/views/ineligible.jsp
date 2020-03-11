@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Validation_Checking</title>
+	<title>CreditCard-Not Eligible</title>
 	<style>
 
 		#msg{
@@ -22,7 +22,7 @@
 
 			<div id="msg">
 				<center>
-				<h1>Sorry!!!You are not eligible for a Credit Card</h1>
+				<h1>Sorry!!! You are not eligible for a credit card</h1>
 				</center>
 			</div>
 </body>
